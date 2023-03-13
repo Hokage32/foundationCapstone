@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <Header>Macro Calculator</Header>
+    
+    
+    
+    
+             <form id="info-form">
+            <p>To get started, please enter the following information:</p>
+            
+            <label for="name">Name:</label>
+            <p></p>
+            <input id="name" type="text">
+            <p></p>
+
+            <label for="weight">Please enter your weight:</label>
+            <p></p>
+            <input class="weight" type="number">
+           
+            <p>Now we need to know your activity level. </p>
+            <p>(14 = sedentary, 15 = moderate, 16 = very active)</p>
+            
+            <div>Activity level:</div>
+            <input id="activity" type="number">
+            
+           
+            <p>What is your desired goal?</p>
+           
+           
+             <label for="weight-loss">Weight loss</label>
+             <input name="goal" type="radio" id="weight-loss" >
+             <p></p>
+             <label for="weight-gain">Weight gain</label>
+             <input name="goal" type="radio"  id="weight-gain">
+             <p></p>
+             <label for="maintain">Maintain weight</label>
+             <input name="goal" type="radio"  id="maintain">
+             <p></p>
+             <button>Submit!</button>
+            </form>
+
+
+        <div id=" divider ">-----------------------------------------------------------------</div>
+        
+   
+    
+            <form id="macro-form">
+    
+        <p>Now let's put together your macro's!</p>
+       
+        <div class="protein">Protein (0.8 - 1.0)</div>
+        <input id="protein" type="number">
+        <p></p>
+        <div class="fats">Fats (0.3 - 0.4)</div>
+        <input id="fats" type="number">
+        <p></p>
+        <div class="carbs">Carbs</div>
+        <input id="carbs" type="number">
+        
+        <p></p>
+        <button>Submit!</button>
+    
+            </form>
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="macro.js"></script>
+</body>
+</html>
