@@ -92,11 +92,7 @@ module.exports = {
         newProtein = proteinNum
         newFat = fatNum 
         
-        // const dbRes = await sequelize.query(`SELECT weight
-        // FROM clients
-        // WHERE client_id = ${id}`)
-        // .catch((err) => console.log(err))
-        // console.log(dbRes[0][0].weight)
+     
 
          sequelize.query(`
             UPDATE clients 
